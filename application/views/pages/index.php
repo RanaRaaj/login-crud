@@ -3,7 +3,7 @@
 	<div class="row">
 		<a type="submit" class="btn btn-success btn-lg btn-block" href="<?php echo base_url('insert') ?>">Insert New Record</a>
 		<br>
-		<span style="color: #449d44;font-size: 19px;"><?php echo $this->session->flashdata('success'); ?></span>
+		<span style="color: #449d44;font-size: 22px;" class="showmsg"><?php echo $this->session->flashdata('success'); ?></span>
 		<table class="table table-hover table-responsive">
 		    <thead>
 		        <tr>
@@ -28,3 +28,11 @@
 		</table>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$(function() {
+    
+    $(".showmsg").hide(8000);
+
+});
+</script>
